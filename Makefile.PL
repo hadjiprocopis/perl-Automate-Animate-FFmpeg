@@ -73,12 +73,12 @@ my %WriteMakefileArgs = (
             license    => 'artistic_2',
 	    homepage   => 'https://metacpan.org/module/Automate::Animate::FFmpeg',
             repository => {
-                url  => 'https://github.com/hadjiprocopis/Automate-Animate-FFmpeg',
-                web  => 'https://github.com/hadjiprocopis/Automate-Animate-FFmpeg',
+                url  => 'https://github.com/hadjiprocopis/perl-Automate-Animate-FFmpeg',
+                web  => 'https://github.com/hadjiprocopis/perl-Automate-Animate-FFmpeg',
                 type => 'git',
             },
             bugtracker => {
-                web => 'https://github.com/hadjiprocopis/Automate-Animate-FFmpeg/issues',
+                web => 'https://github.com/hadjiprocopis/perl-Automate-Animate-FFmpeg/issues',
             }
         },
     },
