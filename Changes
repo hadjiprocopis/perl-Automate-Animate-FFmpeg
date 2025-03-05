@@ -1,0 +1,51 @@
+Revision history for Automate-Animate
+
+0.01    23-12-2023 22:00
+        First version, released on an unsuspecting world.
+
+0.02    23-12-2023 23:00
+        input_patterns() is now accepting regex+modifiers.
+        Added clear_input_images().
+        Enhanced documentation.
+
+0.03    23-12-2023 23:30
+        Duh in packing.
+
+0.04    27-12-2023 20:00
+        Enhanced documentation especially regarding installation
+        and that ffmpeg is a prerequisite.
+
+0.05    27-12-2023 22:00
+        Enhanced documentation for the provided script.
+        Added more test logic in t/900-scripts.t
+        A first attempt is made to add support for unicode pathnames.
+
+0.06    28-12-2023 13:00
+        Enhanced documentation.
+
+0.07    03-01-2023 13:00
+        Added omitted Test2::Plugin::UTF8 and Encode as a dependency in Makefile.PL
+	Unicode normalisation is now done prior to comparing unicode'd filenames, see e.g. t/100-input-patterns.t
+
+0.08    04-01-2023 02:00
+        Fixed a pod error.
+
+0.09    12-03-2024 17:00
+        Trying to fix double encoding of unicoded filenames in M$ the attempted fix is at line 286 of lib/Automate/Animate/FFmpeg.pm
+
+0.10    15-03-2024 13:00
+        Still trying to fix double encoding of unicoded filenames in M$ the attempted fix is at line 286 of lib/Automate/Animate/FFmpeg.pm
+
+0.11    12-04-2024 13:00
+        Still trying to fix double encoding of unicoded filenames in M$ the attempted fix is at line 286 of lib/Automate/Animate/FFmpeg.pm
+        Changes in t/100-input-patterns.t to debug this.
+
+0.12    15-10-2024 17:00
+        The issue of v0.11 seems to have gone but an eye is kept on it.
+        The detection of ffmpeg executable is done in Makefile.PL
+        Now make exits(1) if no ffmpeg executable is found.
+
+0.13    05-03-2025 20:00
+        Switched to using Test::TempDir::Tiny in test files.
+	Fixed urls in Makefile.PL thanks to mohawk2's for spotting it.
+	Added https://metacpan.org/pod/PDL::IO::Pic#wmpeg to the SEE ALSO section (mohawk2's suggestion).
